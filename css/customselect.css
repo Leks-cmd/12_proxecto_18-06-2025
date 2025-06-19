@@ -1,0 +1,71 @@
+select,
+::picker(select){
+    appearance: base-select;
+    /* font: -webkit-small-control; */
+}
+
+select {
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--tertiary-color);
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 2rem;
+}
+
+::picker(select) {
+    /* border: 1px solid lightgray;
+    border-top: 1px solid white; */
+    margin-top: -1px;
+    padding: 0;
+    box-shadow: none;
+
+    /* custom */
+    background: #071a40;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 5px;
+}
+
+option {
+    color: var(--white);
+    padding: 0.75rem 1.5rem 0.75rem 2.5rem;
+}
+
+/* selectedcontent {
+    font-weight: 800;
+} */
+
+option,
+selectedcontent {
+    letter-spacing: 0.3px;
+    /* custom */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*select::picker-icon {
+    display: none;
+}*/
+
+/* checked style */
+
+option:checked {
+    background: #edd0e966;
+}
+
+option::checkmark {
+    content: '';
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjAuMjg1IDJsLTExLjI4NSAxMS41NjctNS4yODYtNS4wMTEtMy43MTQgMy43MTYgOSA4LjcyOCAxNS0xNS4yODV6Ii8+PC9zdmc+);
+    background-size: cover;
+    position: absolute;
+    left: 0.75rem;
+}

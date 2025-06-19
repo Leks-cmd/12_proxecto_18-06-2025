@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="gl" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="O seguinte formulario é para postularse a un posto de traballo no noso estudio de deseño.">
+    <title>Candidatarse ao posto</title>
+    <link rel="shortcut icon" href="./img/sun-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/customselect.css">
+</head>
+
+<body>
+    <main class="container">
+        <section class="container__content">
+            <div class="container__logo">
+                <img src="./img/sun-logo.png" alt="Logo da marca">
+            </div>
+            <div class="container__menu">
+                <ul>
+                    <li class="container__menu-items"><a href="#">Inicio</a></li>
+                    <li class="container__menu-items"><a href="#">Traballos</a></li>
+                    <li class="container__menu-items"><a href="#">Quen somos</a></li>
+                    <li class="container__menu-items"><a href="#">Contactar</a></li>
+                </ul>
+            </div>
+            <div class="container__social-footer">
+                <div class="container__social">
+                    <ul class="container_icons">
+                        <li><a href="#"><img src="./img/instagram.svg" class="container_icons-items"
+                                    alt="Icono para acceder a Instagram"></a></li>
+                        <li><a href="#"><img src="./img/linkedin.svg" class="container_icons-items"
+                                    alt="Icono para acceder a LinkedIn"></a></li>
+                        <li><a href="#"><img src="./img/artstation.svg" class="container_icons-items"
+                                    alt="Icono para acceder a ArtStation"></a></li>
+                    </ul>
+                </div>
+                <div class="container__footer">
+                    <footer>
+                        &copy;2025 by Leks-cmd
+                    </footer>
+                </div>
+            </div>
+        </section>
+
+        <div class="container__form">
+            <div class="contact__title">Contactar</div>
+            <form action="#" id="form">
+                <div>
+                    <p>Acerca de ti e das túas habilidades</p>
+                </div>
+                <!-- Inserir nome -->
+                <div class="contact__name">
+                    <span aria-hidden="true">
+                        <input type="text" name="name" id="name" placeholder="Nome: John/Jane"
+                            aria-describedby="inserir-name" required>
+                    </span>
+                </div>
+                <!-- Inserir primeiro e segundo apelido -->
+                <div class="contact__apelidos">
+                    <span aria-hidden="true">
+                        <input type="text" name="apelido1" id="apelido1" placeholder="Primeiro Apelido: Doe" required>
+                        <input type="text" name="apelido2" id="apelido2" placeholder="Segundo Apelido: Johnson"
+                            required>
+                    </span>
+                </div>
+                <!-- Inserir email e NIF -->
+                <div class="contact__email-nif">
+                    <span aria-hidden="true">
+                        <input type="email" name="email" id="email" placeholder="exemplo@email.com" required>
+                    </span>
+                    <span aria-hidden="true">
+                        <input type="text" name="nif" id="nif" maxlength="9" pattern="[0-9]{8}[A-Z]"
+                            placeholder="12345678Z" required></span>
+                </div>
+                <!-- Selector de actividade profesional -->
+                <div>
+                    <span aria-hidden="true">
+                        <select name="actividade_profesional" id="actividade_profesional" class="contact__actividade"
+                            required>
+                            <option value="">Actividade Profesional..?</option>
+                            <option value="director-creativo">Director creativo</option>
+                            <option value="project-manager">Project Manager</option>
+                            <option value="analista-y-desarrollador-web">Analista y desarrollador Web</option>
+                            <option value="social-media-manager">Social Media Manager / Creativo o Estratega Digital
+                            </option>
+                            <option value="content-manager">Content Manager</option>
+                            <option value="community-manager">Community Manager</option>
+                            <option value="creativo-grafico">Diseñador Gráfico / Creativo gráfico</option>
+                            <option value="multitasking">Multifunciones / Multitasking</option>
+                        </select>
+                    </span>
+                </div>
+                <!-- Rango salarial -->
+                <div class="contact__salario">
+                    <fieldset>
+                        <legend>Que rango salarial esperas ao ano?</legend>
+                        <div class="contact__salario-options">
+                            <div class="contact__salario-option1">
+                                <label for="option_1">
+                                    <input type="radio" name="option" id="option_1" value="option_1" required>
+                                    18,735&euro;
+                                </label><br>
+                                <label for="option_2">
+                                    <input type="radio" name="option" id="option_2" value="option_2" required>
+                                    27,000&euro;
+                                </label>
+                            </div>
+                            <div class="contact__salario-option2">
+                                <label for="option_3">
+                                    <input type="radio" name="option" id="option_3" value="option_3" required>
+                                    35,000&euro;
+                                </label><br>
+                                <label for="option_4">
+                                    <input type="radio" name="option" id="option_4" value="option_4" required>
+                                    47,000&euro;
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <!-- Selector de mobilidades -->
+                <div class="contact__mobilidades">
+                    <fieldset>
+                        <legend>Opcións de mobilidade xeográfica</legend>
+                        <div class="contact___mobilidades-cbox">
+                            <label for="cbox1">
+                                <input type="checkbox" name="cbox1" id="cbox1" value="cbox1">
+                                Desprazamento</label>
+                            <label for="cbox2">
+                                <input type="checkbox" name="cbox2" id="cbox2" value="cbox2">
+                                Traslado</label>
+                            <label for="cbox3">
+                                <input type="checkbox" name="cbox3" id="cbox3" value="cbox3">
+                                Deducións</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <!-- Breve presentación -->
+                <div>
+                    <p>Que esperas de nós? e Algo máis sobre ti?</p>
+                    <div class="contact__presentation">
+                        <span aria-hidden="true">
+                            <textarea name="textarea" id="textarea" placeholder="Deixe a súa mensaxe"
+                                maxlength="500"></textarea>
+                        </span>
+                    </div>
+                </div>
+                <!-- Boton de enviar -->
+                <button type="submit" id="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
